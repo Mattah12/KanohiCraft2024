@@ -39,15 +39,35 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(1,3),
                      BlockBehaviour.Properties.of().strength(3f)
                              .noOcclusion()
-                             .lightLevel(s ->8)
+                             .lightLevel(s ->10)
                              .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> LIGHTSTONE_DEEPSLATE_ORE = registerBlock("lightstone_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,3),
                      BlockBehaviour.Properties.of().strength(3f)
                              .noOcclusion()
-                             .lightLevel(s ->8)
+                             .lightLevel(s ->10)
                              .requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> LIGHTSTONE_WOOD_LAMP = registerBlock("lightstone_wood_lamp",
+            () -> new Block (BlockBehaviour.Properties.of().strength(3f)
+                    .noOcclusion()
+                    .lightLevel(s ->15)
+                    .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> LIGHTSTONE_STONE_LAMP = registerBlock("lightstone_stone_lamp",
+            () -> new Block (BlockBehaviour.Properties.of().strength(3f)
+                    .noOcclusion()
+                    .lightLevel(s ->15)
+                    .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> LIGHTSTONE_REFINED_WOOD_LAMP = registerBlock("lightstone_refined_wood_lamp",
+            () -> new Block (BlockBehaviour.Properties.of().strength(3f)
+                    .noOcclusion()
+                    .lightLevel(s ->15)
+                    .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> LIGHTSTONE_REFINED_STONE_LAMP = registerBlock("lightstone_refined_stone_lamp",
+            () -> new Block (BlockBehaviour.Properties.of().strength(3f)
+                    .noOcclusion()
+                    .lightLevel(s ->15)
+                    .requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

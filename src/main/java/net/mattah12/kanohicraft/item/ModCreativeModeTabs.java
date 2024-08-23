@@ -35,6 +35,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.LIGHTSTONE_ORE);
                         pOutput.accept(ModBlocks.LIGHTSTONE_DEEPSLATE_ORE);
 
+                        pOutput.accept(ModBlocks.LIGHTSTONE_WOOD_LAMP);
+                        pOutput.accept(ModBlocks.LIGHTSTONE_REFINED_WOOD_LAMP);
+                        pOutput.accept(ModBlocks.LIGHTSTONE_STONE_LAMP);
+                        pOutput.accept(ModBlocks.LIGHTSTONE_REFINED_STONE_LAMP);
+
                         pOutput.accept(ModBlocks.PROTODERMIS_BLOCK);
 
                     }).build());

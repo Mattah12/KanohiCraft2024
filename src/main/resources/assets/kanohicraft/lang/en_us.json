@@ -14,6 +14,11 @@
 
   "block.kanohicraft.lightstone_ore": "Lightstone Ore",
   "block.kanohicraft.lightstone_deepslate_ore": "Lightstone Deepslate Ore",
+  "block.kanohicraft.lightstone_stone_lamp": "Lightstone Stone Lamp",
+  "block.kanohicraft.lightstone_wood_lamp": "Lightstone Wood Lamp",
+  "block.kanohicraft.lightstone_refined_stone_lamp": "Lightstone Refined Stone Lamp",
+  "block.kanohicraft.lightstone_refined_wood_lamp": "Lightstone Refined Wood Lamp",
+
 
   "block.kanohicraft.protodermis_block": "Block of Protodermis"
 }
