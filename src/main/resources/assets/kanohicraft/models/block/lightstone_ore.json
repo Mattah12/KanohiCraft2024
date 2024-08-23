@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/block",
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "kanohicraft:block/lightstone_ore",
     "inner": "kanohicraft:block/lightstone_ore_inner",
