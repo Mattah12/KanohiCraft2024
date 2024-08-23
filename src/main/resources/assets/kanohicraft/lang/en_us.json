@@ -4,5 +4,16 @@
   "item.kanohicraft.lightstone": "Lightstone Crystal",
   "item.kanohicraft.raw_protodermis": "Raw Protodermis",
   "item.kanohicraft.protodermis_ingot": "Protodermis Ingot",
-  "item.kanohicraft.protodermis_nugget": "Protodermis Nugget"
+  "item.kanohicraft.protodermis_nugget": "Protodermis Nugget",
+
+
+  "block.kanohicraft.protodermis_deepslate_ore": "Protodermis Deepslate Ore",
+  "block.kanohicraft.protodermis_nether_ore": "Protodermis Nether Ore",
+  "block.kanohicraft.protodermis_end_ore": "Protodermis End Ore",
+  "block.kanohicraft.protodermis_ore": "Protodermis Ore",
+
+  "block.kanohicraft.lightstone_ore": "Lightstone Ore",
+  "block.kanohicraft.lightstone_deepslate_ore": "Lightstone Deepslate Ore",
+
+  "block.kanohicraft.protodermis_block": "Block of Protodermis"
 }

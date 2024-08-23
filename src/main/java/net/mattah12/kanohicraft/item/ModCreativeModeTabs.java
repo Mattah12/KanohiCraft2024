@@ -1,6 +1,7 @@
 package net.mattah12.kanohicraft.item;
 
 import net.mattah12.kanohicraft.KanohiCraft;
+import net.mattah12.kanohicraft.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -26,6 +27,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.NUGGET_PROTODERMIS);
                         pOutput.accept(ModItems.INGOT_PROTODERMIS);
                         pOutput.accept(ModItems.LIGHTSTONE);
+
+                        pOutput.accept(ModBlocks.PROTODERMIS_ORE);
+                        pOutput.accept(ModBlocks.PROTODERMIS_DEEPSLATE_ORE);
+                        pOutput.accept(ModBlocks.PROTODERMIS_NETHER_ORE);
+                        pOutput.accept(ModBlocks.PROTODERMIS_END_ORE);
+                        pOutput.accept(ModBlocks.LIGHTSTONE_ORE);
+                        pOutput.accept(ModBlocks.LIGHTSTONE_DEEPSLATE_ORE);
+
+                        pOutput.accept(ModBlocks.PROTODERMIS_BLOCK);
 
                     }).build());
 
