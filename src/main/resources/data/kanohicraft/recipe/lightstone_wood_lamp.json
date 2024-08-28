@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "kanohicraft:lightstone"
+    },
+    "B": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "AAA",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kanohicraft:lightstone_wood_lamp"
+  }
+}
