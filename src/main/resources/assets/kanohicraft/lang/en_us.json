@@ -2,6 +2,10 @@
   "itemGroup.kanohicraft.kanohicraft_tab": "Kanohi Craft",
 
   "item.kanohicraft.lightstone": "Lightstone Crystal",
+  "item.kanohicraft.item_lightstone_torch": "Lightstone Torch",
+  "item.kanohicraft.item_lightstone_refined_torch": "Refined Lightstone Torch",
+
+
   "item.kanohicraft.raw_protodermis": "Raw Protodermis",
   "item.kanohicraft.protodermis_ingot": "Protodermis Ingot",
   "item.kanohicraft.protodermis_nugget": "Protodermis Nugget",
@@ -18,6 +22,8 @@
   "block.kanohicraft.lightstone_wood_lamp": "Lightstone Wood Lamp",
   "block.kanohicraft.lightstone_refined_stone_lamp": "Lightstone Refined Stone Lamp",
   "block.kanohicraft.lightstone_refined_wood_lamp": "Lightstone Refined Wood Lamp",
+  "block.kanohicraft.lightstone_torch": "Lightstone Torch",
+  "block.kanohicraft.lightstone_refined_torch": "Refined Lightstone Torch",
 
 
   "block.kanohicraft.protodermis_block": "Block of Protodermis"

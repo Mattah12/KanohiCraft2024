@@ -1,7 +1,12 @@
 package net.mattah12.kanohicraft.item;
 
 import net.mattah12.kanohicraft.KanohiCraft;
+import net.mattah12.kanohicraft.block.ModBlocks;
+import net.minecraft.core.Direction;
+import net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -13,6 +18,16 @@ public class ModItems {
     public static final DeferredItem<Item> HAU = ITEMS.registerSimpleItem("hau_icon");
 
     public static final DeferredItem<Item> LIGHTSTONE = ITEMS.registerSimpleItem("lightstone");
+
+
+
+    public static final DeferredItem<StandingAndWallBlockItem> LIGHTSTONE_TORCH_ITEM = ITEMS.register("item_lightstone_torch",
+            () -> new StandingAndWallBlockItem(ModBlocks.LIGHTSTONE_TORCH_BLOCK.get(), ModBlocks.WALL_LIGHTSTONE_TORCH.get(),
+                    new Item.Properties(), Direction.DOWN));
+    public static final DeferredItem<Item> LIGHTSTONE_REFINED_TORCH_ITEM = ITEMS.register("item_lightstone_refined_torch",
+            ()-> new StandingAndWallBlockItem(ModBlocks.LIGHTSTONE_REFINED_TORCH_BLOCK.get(), ModBlocks.WALL_LIGHTSTONE_REFINED_TORCH.get(),
+                    new Item.Properties(), Direction.DOWN));
+
     public static final DeferredItem<Item> RAW_PROTODERMIS =
             ITEMS.registerItem("raw_protodermis", Item::new, new Item.Properties());
     public static final DeferredItem<Item> INGOT_PROTODERMIS = ITEMS.registerSimpleItem("protodermis_ingot");

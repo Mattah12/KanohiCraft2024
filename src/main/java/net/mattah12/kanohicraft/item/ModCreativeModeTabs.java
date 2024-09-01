@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.NUGGET_PROTODERMIS);
                         pOutput.accept(ModItems.INGOT_PROTODERMIS);
                         pOutput.accept(ModItems.LIGHTSTONE);
+                        pOutput.accept(ModItems.LIGHTSTONE_TORCH_ITEM);
+                        pOutput.accept(ModItems.LIGHTSTONE_REFINED_TORCH_ITEM);
 
                         pOutput.accept(ModBlocks.PROTODERMIS_ORE);
                         pOutput.accept(ModBlocks.PROTODERMIS_DEEPSLATE_ORE);
@@ -34,6 +36,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PROTODERMIS_END_ORE);
                         pOutput.accept(ModBlocks.LIGHTSTONE_ORE);
                         pOutput.accept(ModBlocks.LIGHTSTONE_DEEPSLATE_ORE);
+
 
                         pOutput.accept(ModBlocks.LIGHTSTONE_WOOD_LAMP);
                         pOutput.accept(ModBlocks.LIGHTSTONE_REFINED_WOOD_LAMP);

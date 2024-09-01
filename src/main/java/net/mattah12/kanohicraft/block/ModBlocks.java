@@ -2,11 +2,12 @@ package net.mattah12.kanohicraft.block;
 
 import net.mattah12.kanohicraft.KanohiCraft;
 import net.mattah12.kanohicraft.item.ModItems;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -19,6 +20,7 @@ public class ModBlocks {
             DeferredRegister.createBlocks(KanohiCraft.MOD_ID);
 
 
+    //PROTODERMIS
     public static final DeferredBlock<Block> PROTODERMIS_BLOCK = registerBlock("protodermis_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
@@ -35,6 +37,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3,6),
                      BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
 
+
+    //LIGHTSTONE
     public static final DeferredBlock<Block> LIGHTSTONE_ORE = registerBlock("lightstone_ore",
             () -> new DropExperienceBlock(UniformInt.of(1,3),
                      BlockBehaviour.Properties.of().strength(3f)
@@ -68,6 +72,37 @@ public class ModBlocks {
                     .noOcclusion()
                     .lightLevel(s ->15)
                     .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<TorchBlock> LIGHTSTONE_TORCH_BLOCK = registerBlock("lightstone_torch",
+            () -> new TorchBlock(ParticleTypes.GLOW,
+                    BlockBehaviour.Properties.of()
+                            .noOcclusion()
+                            .lightLevel(s ->15)
+                            .instabreak()
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<TorchBlock> LIGHTSTONE_REFINED_TORCH_BLOCK = registerBlock("lightstone_refined_torch",
+            () -> new TorchBlock (ParticleTypes.GLOW,
+                    BlockBehaviour.Properties.of()
+                            .noOcclusion()
+                            .lightLevel(s ->15)
+                            .instabreak()
+                            .dropsLike(LIGHTSTONE_TORCH_BLOCK.get())
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<WallTorchBlock> WALL_LIGHTSTONE_TORCH = registerBlock("wall_lightstone_torch",
+            () -> new WallTorchBlock (ParticleTypes.GLOW,
+                    BlockBehaviour.Properties.of()
+                            .noOcclusion()
+                            .lightLevel(s ->15)
+                            .instabreak()
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<WallTorchBlock> WALL_LIGHTSTONE_REFINED_TORCH = registerBlock("wall_lightstone_refined_torch",
+            () -> new WallTorchBlock (ParticleTypes.GLOW,
+                    BlockBehaviour.Properties.of()
+                            .noOcclusion()
+                            .lightLevel(s ->15)
+                            .instabreak()
+                            .dropsLike(WALL_LIGHTSTONE_TORCH.get())
+                            .requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
