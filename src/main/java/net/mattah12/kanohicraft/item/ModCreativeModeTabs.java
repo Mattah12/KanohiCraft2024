@@ -8,6 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.checkerframework.checker.guieffect.qual.PolyUIType;
 
 import java.util.function.Supplier;
 
@@ -22,6 +23,10 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.HAU);
+                        pOutput.accept(ModItems.VUATA_MACA);
+
+
+                        pOutput.accept(ModItems.BULA_BERRY);
 
                         pOutput.accept(ModItems.RAW_PROTODERMIS);
                         pOutput.accept(ModItems.NUGGET_PROTODERMIS);

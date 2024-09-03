@@ -78,31 +78,27 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of()
                             .noOcclusion()
                             .lightLevel(s ->15)
-                            .instabreak()
-                            .requiresCorrectToolForDrops()));
+                            .instabreak()));
     public static final DeferredBlock<TorchBlock> LIGHTSTONE_REFINED_TORCH_BLOCK = registerBlock("lightstone_refined_torch",
             () -> new TorchBlock (ParticleTypes.GLOW,
                     BlockBehaviour.Properties.of()
                             .noOcclusion()
                             .lightLevel(s ->15)
-                            .instabreak()
-                            .dropsLike(LIGHTSTONE_TORCH_BLOCK.get())
-                            .requiresCorrectToolForDrops()));
+                            .instabreak()));
     public static final DeferredBlock<WallTorchBlock> WALL_LIGHTSTONE_TORCH = registerBlock("wall_lightstone_torch",
             () -> new WallTorchBlock (ParticleTypes.GLOW,
                     BlockBehaviour.Properties.of()
                             .noOcclusion()
                             .lightLevel(s ->15)
                             .instabreak()
-                            .requiresCorrectToolForDrops()));
+                            .dropsLike(LIGHTSTONE_TORCH_BLOCK.get())));
     public static final DeferredBlock<WallTorchBlock> WALL_LIGHTSTONE_REFINED_TORCH = registerBlock("wall_lightstone_refined_torch",
             () -> new WallTorchBlock (ParticleTypes.GLOW,
                     BlockBehaviour.Properties.of()
                             .noOcclusion()
                             .lightLevel(s ->15)
                             .instabreak()
-                            .dropsLike(WALL_LIGHTSTONE_TORCH.get())
-                            .requiresCorrectToolForDrops()));
+                            .dropsLike(LIGHTSTONE_REFINED_TORCH_BLOCK.get())));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

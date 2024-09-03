@@ -3,19 +3,18 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "kanohicraft:item_lightstone_torch"
+      "item": "kanohicraft:lightstone"
     },
     "B": {
-      "item": "minecraft:stone"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "B B",
-    " A ",
-    "B B"
+    "A",
+    "B"
   ],
   "result": {
     "count": 1,
-    "id": "kanohicraft:lightstone_stone_lamp"
+    "id": "kanohicraft:item_lightstone_torch"
   }
 }

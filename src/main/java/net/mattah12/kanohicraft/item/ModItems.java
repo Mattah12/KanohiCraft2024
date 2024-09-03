@@ -2,8 +2,10 @@ package net.mattah12.kanohicraft.item;
 
 import net.mattah12.kanohicraft.KanohiCraft;
 import net.mattah12.kanohicraft.block.ModBlocks;
+import net.mattah12.kanohicraft.item.custom.VuataMacaItem;
 import net.minecraft.core.Direction;
 import net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.StandingAndWallBlockItem;
@@ -19,6 +21,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> LIGHTSTONE = ITEMS.registerSimpleItem("lightstone");
 
+    public static final DeferredItem<Item> BULA_BERRY = ITEMS.registerItem("bula_berry", Item::new, new Item.Properties()
+            .food(ModFoodProperties.BULA_BERRY));
+    public static final DeferredItem<Item> VUATA_MACA = ITEMS.registerItem("vuata_maca", properties -> new VuataMacaItem(properties, 1000, 1F),
+            new Item.Properties().food(VuataMacaItem.VUATA_MACA));
 
 
     public static final DeferredItem<StandingAndWallBlockItem> LIGHTSTONE_TORCH_ITEM = ITEMS.register("item_lightstone_torch",

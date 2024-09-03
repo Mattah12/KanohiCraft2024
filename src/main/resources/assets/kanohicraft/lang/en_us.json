@@ -1,9 +1,12 @@
 {
   "itemGroup.kanohicraft.kanohicraft_tab": "Kanohi Craft",
 
+  "item.kanohicraft.bula_berry": "Bula Berry",
+  "item.kanohicraft.vuata_maca": "Vuata Maca Fruit",
+
   "item.kanohicraft.lightstone": "Lightstone Crystal",
-  "item.kanohicraft.item_lightstone_torch": "Lightstone Torch",
-  "item.kanohicraft.item_lightstone_refined_torch": "Refined Lightstone Torch",
+  "item.kanohicraft.lightstone_torch": "Lightstone Torch",
+  "item.kanohicraft.lightstone_refined_torch": "Refined Lightstone Torch",
 
 
   "item.kanohicraft.raw_protodermis": "Raw Protodermis",
