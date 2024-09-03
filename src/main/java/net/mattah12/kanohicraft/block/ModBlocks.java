@@ -3,7 +3,6 @@ package net.mattah12.kanohicraft.block;
 import net.mattah12.kanohicraft.KanohiCraft;
 import net.mattah12.kanohicraft.item.ModItems;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
