@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "kanohicraft:protodermis_nugget"
+    },
+    "B": {
+      "item": "kanohicraft:lightstone"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kanohicraft:item_lightstone_refined_torch"
+  }
+}

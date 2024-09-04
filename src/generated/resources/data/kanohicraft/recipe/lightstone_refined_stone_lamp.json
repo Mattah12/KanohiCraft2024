@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:stone"
+    },
+    "B": {
+      "item": "kanohicraft:item_lightstone_refined_torch"
+    }
+  },
+  "pattern": [
+    "A A",
+    " B ",
+    "A A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kanohicraft:lightstone_refined_stone_lamp"
+  }
+}

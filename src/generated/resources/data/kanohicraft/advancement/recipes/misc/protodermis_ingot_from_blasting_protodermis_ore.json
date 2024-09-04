@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_protodermis_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kanohicraft:protodermis_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kanohicraft:protodermis_ingot_from_blasting_protodermis_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_protodermis_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kanohicraft:protodermis_ingot_from_blasting_protodermis_ore"
+    ]
+  }
+}
