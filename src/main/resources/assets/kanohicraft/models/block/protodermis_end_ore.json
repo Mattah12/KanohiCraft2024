@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "kanohicraft:block/protodermis_end_ore"
-  }
-}

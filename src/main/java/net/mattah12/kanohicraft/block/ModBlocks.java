@@ -89,15 +89,13 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of()
                             .noOcclusion()
                             .lightLevel(s ->15)
-                            .instabreak()
-                            .dropsLike(LIGHTSTONE_TORCH_BLOCK.get())));
+                            .instabreak()));
     public static final DeferredBlock<WallTorchBlock> WALL_LIGHTSTONE_REFINED_TORCH = registerBlock("wall_lightstone_refined_torch",
             () -> new WallTorchBlock (ParticleTypes.GLOW,
                     BlockBehaviour.Properties.of()
                             .noOcclusion()
                             .lightLevel(s ->15)
-                            .instabreak()
-                            .dropsLike(LIGHTSTONE_REFINED_TORCH_BLOCK.get())));
+                            .instabreak()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
