@@ -1,3 +1,5 @@
-// 1.21	2024-09-03T16:44:05.9517667	Tags for minecraft:item mod id kanohicraft
+// 1.21	2024-09-05T09:40:42.5021724	Tags for minecraft:item mod id kanohicraft
 2618cccaeeaeb22994d758bba673a48d33ad4cb1 data/kanohicraft/tags/item/kanohi.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/kanohicraft/tags/item/kanoka.json
+73625055d4bf8115484b40b0400d3321237275d3 data/minecraft/tags/item/logs_that_burn.json
+82c8992dd6fd9c002006bdedc6f446cbdaa5aa78 data/minecraft/tags/item/planks.json

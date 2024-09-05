@@ -29,6 +29,19 @@
   "block.kanohicraft.lightstone_torch": "Lightstone Torch",
   "block.kanohicraft.lightstone_refined_torch": "Refined Lightstone Torch",
 
+  "block.kanohicraft.vuata_maca_log": "Vuata Maca Log",
+  "block.kanohicraft.vuata_maca_log_covered": "Moss-covered Vuata Maca Log",
+  "block.kanohicraft.vuata_maca_log_half_covered": "Moss-coveredVuata Maca Log",
+  "block.kanohicraft.vuata_maca_planks": "Vuata Maca Planks",
+  "block.kanohicraft.vuata_maca_wood": "Vuata Maca Wood",
+  "block.kanohicraft.vuata_maca_stripped_log": "Stripped Vuata Maca Log",
+  "block.kanohicraft.vuata_maca_stripped_wood": "Stripped Vuata Maca Wood",
+  "block.kanohicraft.vuata_maca_leaves": "Vuata Maca Leaves",
+  "block.kanohicraft.vuata_maca_stairs": "Vuata Maca Stairs",
+  "block.kanohicraft.vuata_maca_slab": "Vuata Maca Slab",
+
+  "block.kanohicraft.vuata_maca_sapling": "Vuata Maca Sapling",
+
 
   "block.kanohicraft.protodermis_block": "Block of Protodermis"
 }

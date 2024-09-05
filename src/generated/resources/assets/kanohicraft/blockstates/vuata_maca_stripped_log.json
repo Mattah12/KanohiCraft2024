@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "kanohicraft:block/vuata_maca_stripped_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "kanohicraft:block/vuata_maca_stripped_log"
+    },
+    "axis=z": {
+      "model": "kanohicraft:block/vuata_maca_stripped_log_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "kanohicraft:block/vuata_maca_planks",
+    "side": "kanohicraft:block/vuata_maca_planks",
+    "top": "kanohicraft:block/vuata_maca_planks"
+  }
+}

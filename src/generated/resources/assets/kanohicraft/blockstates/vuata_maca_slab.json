@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kanohicraft:block/vuata_maca_slab"
+    },
+    "type=double": {
+      "model": "kanohicraft:block/vuata_maca_planks"
+    },
+    "type=top": {
+      "model": "kanohicraft:block/vuata_maca_slab_top"
+    }
+  }
+}

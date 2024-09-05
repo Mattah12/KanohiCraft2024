@@ -1,11 +1,13 @@
 package net.mattah12.kanohicraft.datagen;
 
 import net.mattah12.kanohicraft.KanohiCraft;
+import net.mattah12.kanohicraft.block.ModBlocks;
 import net.mattah12.kanohicraft.item.ModItems;
 import net.mattah12.kanohicraft.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -27,5 +29,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.HAU.get())
         ;
 
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.VUATA_MACA_LOG.get().asItem())
+                .add(ModBlocks.VUATA_MACA_WOOD.get().asItem())
+                .add(ModBlocks.VUATA_MACA_STRIPPED_LOG.get().asItem())
+                .add(ModBlocks.VUATA_MACA_STRIPPED_WOOD.get().asItem())
+                .add(ModBlocks.VUATA_MACA_LOG_COVERED.get().asItem())
+                .add(ModBlocks.VUATA_MACA_LOG_HALF_COVERED.get().asItem());
+
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.VUATA_MACA_PLANKS.get().asItem());
     }
 }

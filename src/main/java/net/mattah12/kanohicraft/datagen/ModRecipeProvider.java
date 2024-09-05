@@ -97,6 +97,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, PROTODERMIS_SMELTABLES, RecipeCategory.MISC, ModItems.INGOT_PROTODERMIS.get(), 0.25f, 200, "protodermis_ingot");
         oreBlasting(pRecipeOutput, PROTODERMIS_SMELTABLES, RecipeCategory.MISC, ModItems.INGOT_PROTODERMIS.get(), 0.25f, 100, "protodermis_ingot");
+
+        stairBuilder(ModBlocks.VUATA_MACA_STAIRS.get(), Ingredient.of(ModBlocks.VUATA_MACA_PLANKS.get())).group("vuata_maca")
+                .unlockedBy("has_vuata_maca_log", has(ModBlocks.VUATA_MACA_LOG.get())).save(pRecipeOutput);
+
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VUATA_MACA_SLAB.get(), ModBlocks.VUATA_MACA_PLANKS.get());
+
+
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
