@@ -49,5 +49,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.LIGHTSTONE_WOOD_LAMP.get())
                 .add(ModBlocks.LIGHTSTONE_REFINED_STONE_LAMP.get())
                 .add(ModBlocks.LIGHTSTONE_REFINED_WOOD_LAMP.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.VUATA_MACA_LOG.get())
+                .add(ModBlocks.VUATA_MACA_LOG_HALF_COVERED.get())
+                .add(ModBlocks.VUATA_MACA_LOG_COVERED.get())
+                .add(ModBlocks.VUATA_MACA_WOOD.get())
+                .add(ModBlocks.VUATA_MACA_STRIPPED_LOG.get());
     }
 }

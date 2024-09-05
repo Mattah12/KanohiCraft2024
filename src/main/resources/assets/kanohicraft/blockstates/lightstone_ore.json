@@ -2,6 +2,7 @@
   "variants": {
     "": {
       "model": "kanohicraft:block/lightstone_ore"
+
     }
   }
 }

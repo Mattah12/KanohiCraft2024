@@ -1,4 +1,5 @@
-// 1.21	2024-09-03T16:44:06.0061821	Tags for minecraft:block mod id kanohicraft
+// 1.21	2024-09-05T09:40:42.5414694	Tags for minecraft:block mod id kanohicraft
+fda79047a6b63970d22768ae017ad8b6deba3656 data/minecraft/tags/block/logs_that_burn.json
 5558cde5ae8943e414465340af83e7a9c1ec47ab data/minecraft/tags/block/mineable/pickaxe.json
 2987fcfe786702b4b8a7f23ee0536532078d86b1 data/minecraft/tags/block/needs_iron_tool.json
 0035cc14c2288f279ae37e00771038be094baefd data/minecraft/tags/block/needs_stone_tool.json

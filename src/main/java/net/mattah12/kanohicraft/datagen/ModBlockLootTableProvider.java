@@ -38,7 +38,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.WALL_LIGHTSTONE_TORCH.get());
         dropSelf(ModBlocks.WALL_LIGHTSTONE_REFINED_TORCH.get());
 
+        dropSelf(ModBlocks.VUATA_MACA_LOG.get());
+        dropSelf(ModBlocks.VUATA_MACA_LOG_COVERED.get());
+        dropSelf(ModBlocks.VUATA_MACA_LOG_HALF_COVERED.get());
+        dropSelf(ModBlocks.VUATA_MACA_WOOD.get());
+        dropSelf(ModBlocks.VUATA_MACA_STRIPPED_LOG.get());
+        dropSelf(ModBlocks.VUATA_MACA_STRIPPED_WOOD.get());
+        dropSelf(ModBlocks.VUATA_MACA_PLANKS.get());
+        dropSelf(ModBlocks.VUATA_MACA_SAPLING.get());
 
+        this.add(ModBlocks.VUATA_MACA_LEAVES.get(),
+                block -> createLeavesDrops(block, ModBlocks.VUATA_MACA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+                createMultipleOreDrops(ModBlocks.VUATA_MACA_LEAVES.get(), ModItems.VUATA_MACA.get(), 0, 2);
         this.add(ModBlocks.LIGHTSTONE_ORE.get(),
                 block -> createOreDrop(ModBlocks.LIGHTSTONE_ORE.get(), ModItems.LIGHTSTONE.get()));
         this.add(ModBlocks.LIGHTSTONE_DEEPSLATE_ORE.get(),
