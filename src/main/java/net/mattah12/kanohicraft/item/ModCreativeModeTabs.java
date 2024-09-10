@@ -57,11 +57,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.VUATA_MACA_STRIPPED_WOOD);
                         pOutput.accept(ModBlocks.VUATA_MACA_LOG_HALF_COVERED);
                         pOutput.accept(ModBlocks.VUATA_MACA_WOOD);
-                        pOutput.accept(ModBlocks.VUATA_MACA_STAIRS);
-                        pOutput.accept(ModBlocks.VUATA_MACA_SLAB);
-                        pOutput.accept(ModBlocks.VUATA_MACA_PRESSURE_PLATE);
-                        pOutput.accept(ModBlocks.VUATA_MACA_BUTTON);
-
 
                         pOutput.accept(ModBlocks.VUATA_MACA_SAPLING);
 

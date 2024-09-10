@@ -14,7 +14,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -104,7 +103,7 @@ public class ModBlocks {
                             .lightLevel(s ->15)
                             .instabreak()));
 
-    //VUATA MACA
+    //VUATA MACA TREE
     public static final DeferredBlock<Block> VUATA_MACA_LOG = registerBlock("vuata_maca_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> VUATA_MACA_LOG_COVERED = registerBlock("vuata_maca_log_covered",
@@ -137,8 +136,7 @@ public class ModBlocks {
             });
 
     public static final DeferredBlock<Block> VUATA_MACA_LEAVES = registerBlock("vuata_maca_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)
-                    .lightLevel(s ->15)){
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return false;
@@ -148,20 +146,6 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> VUATA_MACA_SAPLING = registerBlock("vuata_maca_sapling",
             () -> new SaplingBlock(ModTreeGrowers.VUATA_MACA,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
-
-    public static final DeferredBlock<Block> VUATA_MACA_STAIRS = registerBlock("vuata_maca_stairs",
-            () -> new StairBlock(ModBlocks.VUATA_MACA_PLANKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> VUATA_MACA_SLAB = registerBlock("vuata_maca_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> VUATA_MACA_PRESSURE_PLATE = registerBlock("vuata_maca_pressure_plate",
-            () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
-    public static final DeferredBlock<Block> VUATA_MACA_BUTTON = registerBlock("vuata_maca_button",
-            () -> new ButtonBlock(BlockSetType.OAK, 10, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)
-                    .noCollission()));
-
-
-
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
