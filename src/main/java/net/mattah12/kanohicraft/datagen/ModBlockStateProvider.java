@@ -5,8 +5,7 @@ import net.mattah12.kanohicraft.block.ModBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -46,11 +45,23 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.VUATA_MACA_WOOD);
         blockItem(ModBlocks.VUATA_MACA_STRIPPED_LOG);
         blockItem(ModBlocks.VUATA_MACA_STRIPPED_WOOD);
+        blockItem(ModBlocks.VUATA_MACA_STAIRS);
+        blockItem(ModBlocks.VUATA_MACA_SLAB);
+        blockItem(ModBlocks.VUATA_MACA_PRESSURE_PLATE);
 
         blockWithItem(ModBlocks.VUATA_MACA_PLANKS);
 
         leavesBlock(ModBlocks.VUATA_MACA_LEAVES);
+
         saplingBlock(ModBlocks.VUATA_MACA_SAPLING);
+
+        stairsBlock(((StairBlock) ModBlocks.VUATA_MACA_STAIRS.get()), blockTexture(ModBlocks.VUATA_MACA_PLANKS.get()));
+
+        slabBlock(((SlabBlock) ModBlocks.VUATA_MACA_SLAB.get()), blockTexture(ModBlocks.VUATA_MACA_PLANKS.get()), blockTexture(ModBlocks.VUATA_MACA_PLANKS.get()));
+
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.VUATA_MACA_PRESSURE_PLATE.get()), blockTexture(ModBlocks.VUATA_MACA_PLANKS.get()));
+
+        buttonBlock(((ButtonBlock) ModBlocks.VUATA_MACA_BUTTON.get()), blockTexture(ModBlocks.VUATA_MACA_PLANKS.get()));
 
 
 
@@ -72,7 +83,5 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockItem(DeferredBlock<Block> deferredBlock) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("kanohicraft:block/" + deferredBlock.getId().getPath()));
     }
-    private void blockItem(DeferredBlock<Block> deferredBlock, String appendix) {
-        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("kanohicraft:block/" + deferredBlock.getId().getPath() + appendix));
-    }
+
 }
