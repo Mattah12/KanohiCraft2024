@@ -1,4 +1,4 @@
-// 1.21	2024-09-05T09:40:42.5167886	Item Models: kanohicraft
+// 1.21	2024-09-10T15:34:01.3188123	Item Models: kanohicraft
 3cc4dd51f33f0824366c9009292bd02664b3f8e3 assets/kanohicraft/models/item/bula_berry.json
 6e063de42dbcb8422f0d68c003f40a870b41fba7 assets/kanohicraft/models/item/hau_icon.json
 f70a6424faad6025461bb01d72d973f2f34cd547 assets/kanohicraft/models/item/lightstone.json
@@ -6,4 +6,5 @@ f70a6424faad6025461bb01d72d973f2f34cd547 assets/kanohicraft/models/item/lightsto
 448ebca157032d2bdf6eee6fd25b9228cf7cda98 assets/kanohicraft/models/item/protodermis_nugget.json
 9178f520d4d3a65791d66054fa1fbd71abf85adb assets/kanohicraft/models/item/raw_protodermis.json
 3611c9a75e5e02ac849e06156491aac1a9c2f115 assets/kanohicraft/models/item/vuata_maca.json
+dd2e4735e56cb65c431ca11f70720223eb17077c assets/kanohicraft/models/item/vuata_maca_button.json
 09cce347eb9208aa76e2600ce34d3e4e6b170d42 assets/kanohicraft/models/item/vuata_maca_sapling.json

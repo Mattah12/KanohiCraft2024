@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "kanohicraft:block/vuata_maca_planks"
+  }
+}

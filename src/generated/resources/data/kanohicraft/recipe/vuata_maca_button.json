@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "vuata_maca",
+  "ingredients": [
+    {
+      "item": "kanohicraft:vuata_maca_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kanohicraft:vuata_maca_button"
+  }
+}

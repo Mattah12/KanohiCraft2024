@@ -103,6 +103,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VUATA_MACA_SLAB.get(), ModBlocks.VUATA_MACA_PLANKS.get());
 
+        pressurePlate(pRecipeOutput, ModBlocks.VUATA_MACA_PRESSURE_PLATE.get(), ModBlocks.VUATA_MACA_PLANKS.get());
+
+        buttonBuilder(ModBlocks.VUATA_MACA_BUTTON.get(), Ingredient.of(ModBlocks.VUATA_MACA_PLANKS.get())).group("vuata_maca")
+                .unlockedBy("has_vuata_maca_log", has(ModBlocks.VUATA_MACA_LOG.get())).save(pRecipeOutput);
+
 
     }
 

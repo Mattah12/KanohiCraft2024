@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "kanohicraft:block/vuata_maca_pressure_plate"
+    },
+    "powered=true": {
+      "model": "kanohicraft:block/vuata_maca_pressure_plate_down"
+    }
+  }
+}

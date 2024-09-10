@@ -28,11 +28,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_PROTODERMIS.get());
 
         saplingItem(ModBlocks.VUATA_MACA_SAPLING);
+
+        buttonItem(ModBlocks.VUATA_MACA_BUTTON, ModBlocks.VUATA_MACA_PLANKS);
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(KanohiCraft.MOD_ID,"block/" + item.getId().getPath()));
+    }
+
+    public void buttonItem(DeferredBlock<Block> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
+                .texture("texture", ResourceLocation.fromNamespaceAndPath(KanohiCraft.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
     }
 }
