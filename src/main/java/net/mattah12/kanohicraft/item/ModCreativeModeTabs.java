@@ -61,6 +61,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.VUATA_MACA_SLAB);
                         pOutput.accept(ModBlocks.VUATA_MACA_PRESSURE_PLATE);
                         pOutput.accept(ModBlocks.VUATA_MACA_BUTTON);
+                        pOutput.accept(ModBlocks.VUATA_MACA_FENCE);
+                        pOutput.accept(ModBlocks.VUATA_MACA_FENCE_GATE);
+                        pOutput.accept(ModBlocks.VUATA_MACA_WALL);
+                        pOutput.accept(ModBlocks.VUATA_MACA_DOOR);
+                        pOutput.accept(ModBlocks.VUATA_MACA_TRAPDOOR);
 
                         pOutput.accept(ModBlocks.VUATA_MACA_SAPLING);
 

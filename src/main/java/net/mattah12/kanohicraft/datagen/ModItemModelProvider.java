@@ -26,12 +26,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.INGOT_PROTODERMIS.get());
         basicItem(ModItems.NUGGET_PROTODERMIS.get());
         basicItem(ModItems.RAW_PROTODERMIS.get());
+        basicItem(ModBlocks.VUATA_MACA_DOOR.asItem());
 
         saplingItem(ModBlocks.VUATA_MACA_SAPLING);
 
         buttonItem(ModBlocks.VUATA_MACA_BUTTON, ModBlocks.VUATA_MACA_PLANKS);
+
+        fenceItem(ModBlocks.VUATA_MACA_FENCE, ModBlocks.VUATA_MACA_PLANKS);
+
+        wallItem(ModBlocks.VUATA_MACA_WALL, ModBlocks.VUATA_MACA_PLANKS);
+
+
     }
 
+    //Helper methods
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
@@ -41,6 +49,18 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void buttonItem(DeferredBlock<Block> block, DeferredBlock<Block> baseBlock) {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
                 .texture("texture", ResourceLocation.fromNamespaceAndPath(KanohiCraft.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void fenceItem(DeferredBlock<Block> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(KanohiCraft.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void wallItem(DeferredBlock<Block> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  ResourceLocation.fromNamespaceAndPath(KanohiCraft.MOD_ID,
                         "block/" + baseBlock.getId().getPath()));
     }
 }

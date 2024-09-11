@@ -15,10 +15,12 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.Properties;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -104,7 +106,7 @@ public class ModBlocks {
                             .lightLevel(s ->15)
                             .instabreak()));
 
-    //VUATA MACA TREE
+    //VUATA MACA
     public static final DeferredBlock<Block> VUATA_MACA_LOG = registerBlock("vuata_maca_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> VUATA_MACA_LOG_COVERED = registerBlock("vuata_maca_log_covered",
@@ -164,6 +166,18 @@ public class ModBlocks {
     public static final DeferredBlock<Block> VUATA_MACA_BUTTON = registerBlock("vuata_maca_button",
             () -> new ButtonBlock(BlockSetType.OAK, 10, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)
                     .noCollission()));
+    public static final DeferredBlock<Block> VUATA_MACA_FENCE = registerBlock("vuata_maca_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> VUATA_MACA_FENCE_GATE = registerBlock("vuata_maca_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> VUATA_MACA_WALL = registerBlock("vuata_maca_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> VUATA_MACA_DOOR = registerBlock("vuata_maca_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()
+                    .noOcclusion()));
+    public static final DeferredBlock<Block> VUATA_MACA_TRAPDOOR = registerBlock("vuata_maca_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK,BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()
+                    .noOcclusion()));
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block){
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

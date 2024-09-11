@@ -56,5 +56,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.VUATA_MACA_LOG_COVERED.get())
                 .add(ModBlocks.VUATA_MACA_WOOD.get())
                 .add(ModBlocks.VUATA_MACA_STRIPPED_LOG.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.VUATA_MACA_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.VUATA_MACA_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.VUATA_MACA_WALL.get());
     }
 }

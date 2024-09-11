@@ -48,6 +48,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.VUATA_MACA_STAIRS);
         blockItem(ModBlocks.VUATA_MACA_SLAB);
         blockItem(ModBlocks.VUATA_MACA_PRESSURE_PLATE);
+        blockItem(ModBlocks.VUATA_MACA_FENCE_GATE);
+
+        blockItem(ModBlocks.VUATA_MACA_TRAPDOOR, "_bottom");
 
         blockWithItem(ModBlocks.VUATA_MACA_PLANKS);
 
@@ -63,6 +66,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         buttonBlock(((ButtonBlock) ModBlocks.VUATA_MACA_BUTTON.get()), blockTexture(ModBlocks.VUATA_MACA_PLANKS.get()));
 
+        fenceBlock(((FenceBlock) ModBlocks.VUATA_MACA_FENCE.get()), blockTexture(ModBlocks.VUATA_MACA_PLANKS.get()));
+
+        fenceGateBlock(((FenceGateBlock) ModBlocks.VUATA_MACA_FENCE_GATE.get()), blockTexture(ModBlocks.VUATA_MACA_PLANKS.get()));
+
+        wallBlock(((WallBlock) ModBlocks.VUATA_MACA_WALL.get()), blockTexture(ModBlocks.VUATA_MACA_PLANKS.get()));
+
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.VUATA_MACA_DOOR.get()), modLoc("block/vuata_maca_door_bottom"),
+                modLoc("block/vuata_maca_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.VUATA_MACA_TRAPDOOR.get()),
+                modLoc("block/vuata_maca_trapdoor"), true, "cutout");
 
 
 
@@ -82,6 +95,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockItem(DeferredBlock<Block> deferredBlock) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("kanohicraft:block/" + deferredBlock.getId().getPath()));
+    }
+    private void blockItem(DeferredBlock<Block> deferredBlock, String appendix) {
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("kanohicraft:block/" + deferredBlock.getId().getPath() + appendix));
     }
 
 }

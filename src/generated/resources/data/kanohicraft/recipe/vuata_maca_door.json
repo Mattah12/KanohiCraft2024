@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "vuata_maca",
+  "key": {
+    "#": {
+      "item": "kanohicraft:vuata_maca_planks"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "kanohicraft:vuata_maca_door"
+  }
+}

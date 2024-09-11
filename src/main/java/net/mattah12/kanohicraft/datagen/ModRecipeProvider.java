@@ -108,6 +108,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         buttonBuilder(ModBlocks.VUATA_MACA_BUTTON.get(), Ingredient.of(ModBlocks.VUATA_MACA_PLANKS.get())).group("vuata_maca")
                 .unlockedBy("has_vuata_maca_log", has(ModBlocks.VUATA_MACA_LOG.get())).save(pRecipeOutput);
 
+        fenceBuilder(ModBlocks.VUATA_MACA_FENCE.get(), Ingredient.of(ModBlocks.VUATA_MACA_PLANKS.get())).group("vuata_maca")
+                .unlockedBy("has_vuata_maca_log", has(ModBlocks.VUATA_MACA_LOG.get())).save(pRecipeOutput);
+
+        fenceGateBuilder(ModBlocks.VUATA_MACA_FENCE_GATE.get(), Ingredient.of(ModBlocks.VUATA_MACA_PLANKS.get())).group("vuata_maca")
+                .unlockedBy("has_vuata_maca_log", has(ModBlocks.VUATA_MACA_LOG.get())).save(pRecipeOutput);
+
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VUATA_MACA_WALL.get(), ModBlocks.VUATA_MACA_PLANKS.get());
+
+
+        doorBuilder(ModBlocks.VUATA_MACA_DOOR.get(), Ingredient.of(ModBlocks.VUATA_MACA_PLANKS.get())).group("vuata_maca")
+                .unlockedBy("has_vuata_maca_log", has(ModBlocks.VUATA_MACA_LOG.get())).save(pRecipeOutput);
+
+
+        trapdoorBuilder(ModBlocks.VUATA_MACA_TRAPDOOR.get(), Ingredient.of(ModBlocks.VUATA_MACA_PLANKS.get())).group("vuata_maca")
+                .unlockedBy("has_vuata_maca_log", has(ModBlocks.VUATA_MACA_LOG.get())).save(pRecipeOutput);
+
 
     }
 

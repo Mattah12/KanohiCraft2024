@@ -49,9 +49,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.VUATA_MACA_STAIRS.get());
         dropSelf(ModBlocks.VUATA_MACA_PRESSURE_PLATE.get());
         dropSelf(ModBlocks.VUATA_MACA_BUTTON.get());
+        dropSelf(ModBlocks.VUATA_MACA_FENCE.get());
+        dropSelf(ModBlocks.VUATA_MACA_FENCE_GATE.get());
+        dropSelf(ModBlocks.VUATA_MACA_WALL.get());
+        dropSelf(ModBlocks.VUATA_MACA_TRAPDOOR.get());
 
         this.add(ModBlocks.VUATA_MACA_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.VUATA_MACA_SLAB.get()));
+        this.add(ModBlocks.VUATA_MACA_DOOR.get(),
+                block -> createDoorTable(ModBlocks.VUATA_MACA_DOOR.get()));
 
         this.add(ModBlocks.VUATA_MACA_LEAVES.get(),
                 block -> createLeavesDrops(block, ModBlocks.VUATA_MACA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
