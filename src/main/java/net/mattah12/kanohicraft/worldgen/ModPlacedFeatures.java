@@ -46,7 +46,7 @@ public class ModPlacedFeatures {
 
 
         register(context, LIGHTSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_LIGHTSTONE_ORE_KEY),
-                ModOrePlacements.commonOrePlacement(6,
+                ModOrePlacements.commonOrePlacement(20,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-20), VerticalAnchor.absolute(70))));
 }
     private static ResourceKey<PlacedFeature> registerKey(String name) {

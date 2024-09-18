@@ -65,7 +65,7 @@ public class ModConfiguredFeatures {
                 ModBlocks.PROTODERMIS_NETHER_ORE.get().defaultBlockState(), 7));
 
 
-        register(context, OVERWORLD_LIGHTSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLightstoneOres, 6));
+        register(context, OVERWORLD_LIGHTSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldProtodermisOres, 3));
 
 
     }
