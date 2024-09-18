@@ -85,6 +85,46 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', Blocks.STONE)
                 .unlockedBy("has_refined_lightstone_torch", has(ModItems.LIGHTSTONE_REFINED_TORCH_ITEM.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('B', Items.STICK)
+                .define('A', ModItems.INGOT_PROTODERMIS)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_SHOVEL.get())
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('B', Items.STICK)
+                .define('A', ModItems.INGOT_PROTODERMIS)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_AXE.get())
+                .pattern("AA ")
+                .pattern("AB ")
+                .pattern(" B ")
+                .define('B', Items.STICK)
+                .define('A', ModItems.INGOT_PROTODERMIS)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_HOE.get())
+                .pattern("AA ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('B', Items.STICK)
+                .define('A', ModItems.INGOT_PROTODERMIS)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_SWORD.get())
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .define('B', Items.STICK)
+                .define('A', ModItems.INGOT_PROTODERMIS)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.NUGGET_PROTODERMIS.get(), 9)
                 .requires(ModItems.INGOT_PROTODERMIS.get())
@@ -97,6 +137,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, PROTODERMIS_SMELTABLES, RecipeCategory.MISC, ModItems.INGOT_PROTODERMIS.get(), 0.25f, 200, "protodermis_ingot");
         oreBlasting(pRecipeOutput, PROTODERMIS_SMELTABLES, RecipeCategory.MISC, ModItems.INGOT_PROTODERMIS.get(), 0.25f, 100, "protodermis_ingot");
+
+
 
         stairBuilder(ModBlocks.VUATA_MACA_STAIRS.get(), Ingredient.of(ModBlocks.VUATA_MACA_PLANKS.get())).group("vuata_maca")
                 .unlockedBy("has_vuata_maca_log", has(ModBlocks.VUATA_MACA_LOG.get())).save(pRecipeOutput);

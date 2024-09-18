@@ -23,11 +23,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        tag(ModTags.Items.KANOKA)
+        tag(ModTags.Items.KANOKA);
                 //.add(ModItems.BLACK_OPAL.get())
-        ;tag(ModTags.Items.KANOHI)
-                .add(ModItems.HAU.get())
-        ;
+        tag(ModTags.Items.KANOHI)
+                .add(ModItems.HAU.get());
+
 
         tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.VUATA_MACA_LOG.get().asItem())

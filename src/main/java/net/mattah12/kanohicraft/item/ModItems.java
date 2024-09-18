@@ -4,8 +4,7 @@ import net.mattah12.kanohicraft.KanohiCraft;
 import net.mattah12.kanohicraft.block.ModBlocks;
 import net.mattah12.kanohicraft.item.custom.VuataMacaItem;
 import net.minecraft.core.Direction;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -22,6 +21,22 @@ public class ModItems {
             .food(ModFoodProperties.BULA_BERRY));
     public static final DeferredItem<Item> VUATA_MACA = ITEMS.registerItem("vuata_maca", properties -> new VuataMacaItem(properties, 1000, 1F),
             new Item.Properties().food(VuataMacaItem.VUATA_MACA));
+
+    public static final DeferredItem<Item> PROTODERMIS_SWORD = ITEMS.register("protodermis_sword",
+            () -> new SwordItem(ModToolTiers.PROTODERMIS,
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.PROTODERMIS, 3, -2.4f))));
+    public static final DeferredItem<Item> PROTODERMIS_PICKAXE = ITEMS.register("protodermis_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.PROTODERMIS,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.PROTODERMIS, 1, -2.8f))));
+    public static final DeferredItem<Item> PROTODERMIS_SHOVEL = ITEMS.register("protodermis_shovel",
+            () -> new ShovelItem(ModToolTiers.PROTODERMIS,
+                    new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.PROTODERMIS, 1.5f, -3f))));
+    public static final DeferredItem<Item> PROTODERMIS_AXE = ITEMS.register("protodermis_axe",
+            () -> new AxeItem(ModToolTiers.PROTODERMIS,
+                    new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.PROTODERMIS, 6, -3.2f))));
+    public static final DeferredItem<Item> PROTODERMIS_HOE = ITEMS.register("protodermis_hoe",
+            () -> new HoeItem(ModToolTiers.PROTODERMIS,
+                    new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.PROTODERMIS, 0, -3.0f))));
 
 
     public static final DeferredItem<StandingAndWallBlockItem> LIGHTSTONE_TORCH_ITEM = ITEMS.register("item_lightstone_torch",
