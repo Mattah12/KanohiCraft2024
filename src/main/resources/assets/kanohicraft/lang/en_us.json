@@ -19,6 +19,7 @@
   "item.kanohicraft.protodermis_shovel": "Protodermis Shovel",
   "item.kanohicraft.protodermis_axe": "Protodermis Axe",
   "item.kanohicraft.protodermis_hoe": "Protodermis Hoe",
+  "item.kanohicraft.protodermis_paxel": "Protodermis Paxel",
 
 
   "block.kanohicraft.protodermis_deepslate_ore": "Protodermis Deepslate Ore",
@@ -37,7 +38,7 @@
 
   "block.kanohicraft.vuata_maca_log": "Vuata Maca Log",
   "block.kanohicraft.vuata_maca_log_covered": "Moss-covered Vuata Maca Log",
-  "block.kanohicraft.vuata_maca_log_half_covered": "Moss-coveredVuata Maca Log",
+  "block.kanohicraft.vuata_maca_log_half_covered": "Moss-covered Vuata Maca Log",
   "block.kanohicraft.vuata_maca_planks": "Vuata Maca Planks",
   "block.kanohicraft.vuata_maca_wood": "Vuata Maca Wood",
   "block.kanohicraft.vuata_maca_stripped_log": "Stripped Vuata Maca Log",

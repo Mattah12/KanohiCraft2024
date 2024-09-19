@@ -43,6 +43,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.PROTODERMIS_SHOVEL);
         handheldItem(ModItems.PROTODERMIS_AXE);
         handheldItem(ModItems.PROTODERMIS_HOE);
+        handheldItem(ModItems.PROTODERMIS_PAXEL);
 
 
     }

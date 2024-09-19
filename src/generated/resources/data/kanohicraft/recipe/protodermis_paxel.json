@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "kanohicraft:protodermis_axe"
+    },
+    "B": {
+      "item": "kanohicraft:protodermis_pickaxe"
+    },
+    "C": {
+      "item": "kanohicraft:protodermis_shovel"
+    },
+    "D": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ABC",
+    " D ",
+    " D "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kanohicraft:protodermis_paxel"
+  }
+}

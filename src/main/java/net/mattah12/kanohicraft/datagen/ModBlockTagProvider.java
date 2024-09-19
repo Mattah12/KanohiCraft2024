@@ -2,6 +2,7 @@ package net.mattah12.kanohicraft.datagen;
 
 import net.mattah12.kanohicraft.KanohiCraft;
 import net.mattah12.kanohicraft.block.ModBlocks;
+import net.mattah12.kanohicraft.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -60,5 +61,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCES).add(ModBlocks.VUATA_MACA_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.VUATA_MACA_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.VUATA_MACA_WALL.get());
+
+        this.tag(ModTags.Blocks.PAXEL_MINEABLE)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
     }
 }
