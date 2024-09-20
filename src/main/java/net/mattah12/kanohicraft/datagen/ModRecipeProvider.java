@@ -135,6 +135,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', ModItems.PROTODERMIS_SHOVEL)
                 .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_HAMMER.get())
+                .pattern("ADA")
+                .pattern(" D ")
+                .pattern(" D ")
+                .define('D', Items.STICK)
+                .define('A', ModBlocks.PROTODERMIS_BLOCK)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.NUGGET_PROTODERMIS.get(), 9)
                 .requires(ModItems.INGOT_PROTODERMIS.get())

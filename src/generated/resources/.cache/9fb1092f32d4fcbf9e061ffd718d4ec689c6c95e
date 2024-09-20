@@ -1,4 +1,4 @@
-// 1.21	2024-09-19T11:49:51.3603941	Recipes
+// 1.21	2024-09-20T11:48:41.2172587	Recipes
 efe115be20e2831349026e02815af4bb4e58a913 data/kanohicraft/advancement/recipes/building_blocks/vuata_maca_slab.json
 b2d9227533f42417d00327795905c9a5c577a5d0 data/kanohicraft/advancement/recipes/building_blocks/vuata_maca_stairs.json
 26e68dada361d9daa59de886eb475593b0fab6fe data/kanohicraft/advancement/recipes/building_blocks/vuata_maca_wall.json
@@ -11,6 +11,7 @@ a1b316587b97e893301ad5713b90d1c716322730 data/kanohicraft/advancement/recipes/mi
 1aa6a0220f434dacd42e062781cc79760280b51c data/kanohicraft/advancement/recipes/misc/lightstone_wood_lamp.json
 ecdfed793d2f7227c734e0b3939bf9553d5e7d49 data/kanohicraft/advancement/recipes/misc/protodermis_axe.json
 6c93506cde51bb40967f2ad228a954730ce9b8f8 data/kanohicraft/advancement/recipes/misc/protodermis_block.json
+3812e558ffd1eaae64a1f95e39e6a0e417c34eb9 data/kanohicraft/advancement/recipes/misc/protodermis_hammer.json
 fa44f25489ab686668b818ce3959a804bbd6cb4f data/kanohicraft/advancement/recipes/misc/protodermis_hoe.json
 c24fcec54b114a3fb36b39b05d72917ee4744ed4 data/kanohicraft/advancement/recipes/misc/protodermis_ingot1.json
 8e2220df8302f03d9d7c605c54b2d2c8de94664b data/kanohicraft/advancement/recipes/misc/protodermis_ingot2.json
@@ -42,6 +43,7 @@ ee1311272b3e0c06983b3339fb2fc1772ce5efb0 data/kanohicraft/recipe/lightstone_refi
 68e0fdee77518b36e9b016ee8883507e10e9d2fa data/kanohicraft/recipe/lightstone_wood_lamp.json
 e84fb98e1daa79b9dcebe213fb1db1cd21ce1845 data/kanohicraft/recipe/protodermis_axe.json
 c892b77f72dae02d50308a9ee13bcefec2b8f509 data/kanohicraft/recipe/protodermis_block.json
+353b89835b7402bdd2c5b6a68fb187411d8aac1f data/kanohicraft/recipe/protodermis_hammer.json
 82ac4cad2a069f1e60b8673c4b56fd0aa3be43da data/kanohicraft/recipe/protodermis_hoe.json
 c9a2f1b69e528ee5d17fdecaf707aadb8ebd7ff0 data/kanohicraft/recipe/protodermis_ingot1.json
 4520092d5e54f01c01ff11d5a433886067a69979 data/kanohicraft/recipe/protodermis_ingot2.json

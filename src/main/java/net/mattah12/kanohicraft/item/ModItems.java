@@ -2,6 +2,7 @@ package net.mattah12.kanohicraft.item;
 
 import net.mattah12.kanohicraft.KanohiCraft;
 import net.mattah12.kanohicraft.block.ModBlocks;
+import net.mattah12.kanohicraft.item.custom.HammerItem;
 import net.mattah12.kanohicraft.item.custom.PaxelItem;
 import net.mattah12.kanohicraft.item.custom.VuataMacaItem;
 import net.minecraft.core.Direction;
@@ -42,6 +43,9 @@ public class ModItems {
     public static final DeferredItem<Item> PROTODERMIS_PAXEL = ITEMS.register("protodermis_paxel",
             () -> new PaxelItem(ModToolTiers.PROTODERMIS,
                     new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.PROTODERMIS, 4, -2.8f))));
+    public static final DeferredItem<Item> PROTODERMIS_HAMMER = ITEMS.register("protodermis_hammer",
+            () -> new HammerItem(ModToolTiers.PROTODERMIS,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.PROTODERMIS, 8, -3.2f))));
 
 
     public static final DeferredItem<StandingAndWallBlockItem> LIGHTSTONE_TORCH_ITEM = ITEMS.register("item_lightstone_torch",
