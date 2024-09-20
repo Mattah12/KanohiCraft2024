@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "kanohicraft:vuata_maca_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "kanohicraft:vuata_maca_planks"
+  }
+}

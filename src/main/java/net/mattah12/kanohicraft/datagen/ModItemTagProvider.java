@@ -29,6 +29,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.HAU.get());
 
 
+        tag(ModTags.Items.VUATA_MACA_LOGS)
+                .add(ModBlocks.VUATA_MACA_LOG.get().asItem())
+                .add(ModBlocks.VUATA_MACA_LOG_COVERED.get().asItem())
+                .add(ModBlocks.VUATA_MACA_LOG_HALF_COVERED.get().asItem());
+
+
         tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.VUATA_MACA_LOG.get().asItem())
                 .add(ModBlocks.VUATA_MACA_WOOD.get().asItem())
@@ -36,6 +42,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.VUATA_MACA_STRIPPED_WOOD.get().asItem())
                 .add(ModBlocks.VUATA_MACA_LOG_COVERED.get().asItem())
                 .add(ModBlocks.VUATA_MACA_LOG_HALF_COVERED.get().asItem());
+
+
 
         tag(ItemTags.PLANKS)
                 .add(ModBlocks.VUATA_MACA_PLANKS.get().asItem());

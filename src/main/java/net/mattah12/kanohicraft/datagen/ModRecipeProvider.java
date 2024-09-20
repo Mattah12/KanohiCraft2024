@@ -3,6 +3,7 @@ package net.mattah12.kanohicraft.datagen;
 import net.mattah12.kanohicraft.KanohiCraft;
 import net.mattah12.kanohicraft.block.ModBlocks;
 import net.mattah12.kanohicraft.item.ModItems;
+import net.mattah12.kanohicraft.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -135,6 +136,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', ModItems.PROTODERMIS_SHOVEL)
                 .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_HAMMER.get())
+                .pattern("ADA")
+                .pattern(" D ")
+                .pattern(" D ")
+                .define('D', Items.STICK)
+                .define('A', ModBlocks.PROTODERMIS_BLOCK)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.NUGGET_PROTODERMIS.get(), 9)
                 .requires(ModItems.INGOT_PROTODERMIS.get())
@@ -145,9 +154,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput, "kanohicraft:protodermis_ingot2");
 
 
+
         oreSmelting(pRecipeOutput, PROTODERMIS_SMELTABLES, RecipeCategory.MISC, ModItems.INGOT_PROTODERMIS.get(), 0.25f, 200, "protodermis_ingot");
         oreBlasting(pRecipeOutput, PROTODERMIS_SMELTABLES, RecipeCategory.MISC, ModItems.INGOT_PROTODERMIS.get(), 0.25f, 100, "protodermis_ingot");
 
+
+        planksFromLog(pRecipeOutput, ModBlocks.VUATA_MACA_PLANKS.get(), ModTags.Items.VUATA_MACA_LOGS, 4);
+
+        woodFromLogs(pRecipeOutput, ModBlocks.VUATA_MACA_WOOD.get(), ModBlocks.VUATA_MACA_LOG.get());
+        woodFromLogs(pRecipeOutput, ModBlocks.VUATA_MACA_STRIPPED_WOOD.get(), ModBlocks.VUATA_MACA_STRIPPED_LOG.get());
 
 
         stairBuilder(ModBlocks.VUATA_MACA_STAIRS.get(), Ingredient.of(ModBlocks.VUATA_MACA_PLANKS.get())).group("vuata_maca")

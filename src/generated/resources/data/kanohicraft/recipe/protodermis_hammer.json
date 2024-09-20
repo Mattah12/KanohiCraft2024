@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "kanohicraft:protodermis_block"
+    },
+    "D": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "ADA",
+    " D ",
+    " D "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kanohicraft:protodermis_hammer"
+  }
+}

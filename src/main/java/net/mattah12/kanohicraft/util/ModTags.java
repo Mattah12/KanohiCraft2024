@@ -23,6 +23,7 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> KANOKA = createTag("kanoka");
         public static final TagKey<Item> KANOHI = createTag("kanohi");
+        public static final TagKey<Item> VUATA_MACA_LOGS = createTag("vuata_maca_logs");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(KanohiCraft.MOD_ID, name));
