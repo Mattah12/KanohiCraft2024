@@ -19,7 +19,7 @@ public class ModTags {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(KanohiCraft.MOD_ID, name));
         }
     }
-
+//comment
     public static class Items {
         public static final TagKey<Item> KANOKA = createTag("kanoka");
         public static final TagKey<Item> KANOHI = createTag("kanohi");

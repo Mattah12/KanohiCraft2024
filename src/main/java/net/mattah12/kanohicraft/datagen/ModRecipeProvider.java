@@ -152,7 +152,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.INGOT_PROTODERMIS.get(), 9)
                 .requires(ModBlocks.PROTODERMIS_BLOCK.get())
                 .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput, "kanohicraft:protodermis_ingot2");
-
+//comment
 
 
         oreSmelting(pRecipeOutput, PROTODERMIS_SMELTABLES, RecipeCategory.MISC, ModItems.INGOT_PROTODERMIS.get(), 0.25f, 200, "protodermis_ingot");

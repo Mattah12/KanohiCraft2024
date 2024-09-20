@@ -33,7 +33,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.VUATA_MACA_LOG.get().asItem())
                 .add(ModBlocks.VUATA_MACA_LOG_COVERED.get().asItem())
                 .add(ModBlocks.VUATA_MACA_LOG_HALF_COVERED.get().asItem());
-
+//comment
 
         tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.VUATA_MACA_LOG.get().asItem())

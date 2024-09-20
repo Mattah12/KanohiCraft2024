@@ -71,7 +71,7 @@ public class PaxelItem extends DiggerItem {
                     .put(Blocks.MYCELIUM, Blocks.DIRT_PATH.defaultBlockState())
                     .put(Blocks.ROOTED_DIRT, Blocks.DIRT_PATH.defaultBlockState())
                     .build());
-
+//comment
     public PaxelItem(Tier pTier, Properties pProperties) {
         super(pTier, ModTags.Blocks.PAXEL_MINEABLE, pProperties);
     }
