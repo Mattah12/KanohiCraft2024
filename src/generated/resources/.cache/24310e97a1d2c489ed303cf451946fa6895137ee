@@ -1,11 +1,15 @@
-// 1.21	2024-09-20T11:48:41.2069844	Item Models: kanohicraft
+// 1.21	2024-09-23T10:33:07.7777658	Item Models: kanohicraft
 3cc4dd51f33f0824366c9009292bd02664b3f8e3 assets/kanohicraft/models/item/bula_berry.json
 6e063de42dbcb8422f0d68c003f40a870b41fba7 assets/kanohicraft/models/item/hau_icon.json
 f70a6424faad6025461bb01d72d973f2f34cd547 assets/kanohicraft/models/item/lightstone.json
 a5b84cfcbc82c69781b86b851630f2d2e31b6795 assets/kanohicraft/models/item/protodermis_axe.json
+f22d0f5ca6bcf95d8a7f25824e81298c693dbacb assets/kanohicraft/models/item/protodermis_boots.json
+6efbbb48681d970cc5377b6dfc0f3a6f60a4e806 assets/kanohicraft/models/item/protodermis_chestplate.json
 3240bc7b9d67e31c969077e2adf533722489c440 assets/kanohicraft/models/item/protodermis_hammer.json
+2bc2e9a0dfdb0369d73caa85b751f1084a8b5ae2 assets/kanohicraft/models/item/protodermis_helmet.json
 f718bbb53a72eba266b92dc280a946a915226268 assets/kanohicraft/models/item/protodermis_hoe.json
 9a08e75ae689eccc68c9dd81f2e4929df5c9dcd3 assets/kanohicraft/models/item/protodermis_ingot.json
+b703cb08ff95ce4d0cfe9d0c2440e2a202da6303 assets/kanohicraft/models/item/protodermis_leggings.json
 448ebca157032d2bdf6eee6fd25b9228cf7cda98 assets/kanohicraft/models/item/protodermis_nugget.json
 2664fd93186207d5f183e86e474f6b61d9e1ceb2 assets/kanohicraft/models/item/protodermis_paxel.json
 e8fc1a7471d8fe6629f2f6974d36dab83a749d48 assets/kanohicraft/models/item/protodermis_pickaxe.json

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_protodermis_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kanohicraft:protodermis_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kanohicraft:protodermis_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_protodermis_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kanohicraft:protodermis_helmet"
+    ]
+  }
+}

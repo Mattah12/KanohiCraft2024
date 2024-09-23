@@ -46,6 +46,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.PROTODERMIS_PAXEL);
         handheldItem(ModItems.PROTODERMIS_HAMMER);
 
+        basicItem(ModItems.PROTODERMIS_HELMET.get());
+        basicItem(ModItems.PROTODERMIS_CHESTPLATE.get());
+        basicItem(ModItems.PROTODERMIS_LEGGINGS.get());
+        basicItem(ModItems.PROTODERMIS_BOOTS.get());
+
 
     }
 

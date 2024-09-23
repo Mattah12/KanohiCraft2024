@@ -144,6 +144,29 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModBlocks.PROTODERMIS_BLOCK)
                 .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', ModItems.INGOT_PROTODERMIS)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_BOOTS.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.INGOT_PROTODERMIS)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.INGOT_PROTODERMIS)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PROTODERMIS_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.INGOT_PROTODERMIS)
+                .unlockedBy("has_protodermis_ingot", has(ModItems.INGOT_PROTODERMIS.get())).save(pRecipeOutput);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.NUGGET_PROTODERMIS.get(), 9)
                 .requires(ModItems.INGOT_PROTODERMIS.get())

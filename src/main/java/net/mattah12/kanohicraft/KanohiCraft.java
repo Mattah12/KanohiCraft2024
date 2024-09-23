@@ -1,6 +1,7 @@
 package net.mattah12.kanohicraft;
 
 import net.mattah12.kanohicraft.block.ModBlocks;
+import net.mattah12.kanohicraft.item.ModArmorMaterials;
 import net.mattah12.kanohicraft.item.ModCreativeModeTabs;
 import net.mattah12.kanohicraft.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -43,6 +44,8 @@ public class KanohiCraft {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModArmorMaterials.register(modEventBus);
 
 
 

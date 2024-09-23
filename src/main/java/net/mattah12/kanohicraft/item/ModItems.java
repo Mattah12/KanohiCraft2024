@@ -47,6 +47,19 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.PROTODERMIS,
                     new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.PROTODERMIS, 8, -3.2f))));
 
+    public static final DeferredItem<Item> PROTODERMIS_HELMET = ITEMS.register("protodermis_helmet",
+            () -> new ArmorItem(ModArmorMaterials.PROTODERMIS, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+    public static final DeferredItem<Item> PROTODERMIS_CHESTPLATE = ITEMS.register("protodermis_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.PROTODERMIS, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(16))));
+    public static final DeferredItem<Item> PROTODERMIS_LEGGINGS = ITEMS. register("protodermis_leggings",
+            () -> new ArmorItem(ModArmorMaterials.PROTODERMIS, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(16))));
+    public static final DeferredItem<Item> PROTODERMIS_BOOTS = ITEMS.register("protodermis_boots",
+            () -> new ArmorItem(ModArmorMaterials.PROTODERMIS, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(16))));
+
 
     public static final DeferredItem<StandingAndWallBlockItem> LIGHTSTONE_TORCH_ITEM = ITEMS.register("item_lightstone_torch",
             () -> new StandingAndWallBlockItem(ModBlocks.LIGHTSTONE_TORCH_BLOCK.get(), ModBlocks.WALL_LIGHTSTONE_TORCH.get(),

@@ -57,6 +57,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.PROTODERMIS_PAXEL);
                         pOutput.accept(ModItems.PROTODERMIS_HAMMER);
 
+                        pOutput.accept(ModItems.PROTODERMIS_HELMET);
+                        pOutput.accept(ModItems.PROTODERMIS_CHESTPLATE);
+                        pOutput.accept(ModItems.PROTODERMIS_LEGGINGS);
+                        pOutput.accept(ModItems.PROTODERMIS_BOOTS);
+
                         pOutput.accept(ModBlocks.VUATA_MACA_STRIPPED_LOG);
                         pOutput.accept(ModBlocks.VUATA_MACA_LEAVES);
                         pOutput.accept(ModBlocks.VUATA_MACA_LOG);
